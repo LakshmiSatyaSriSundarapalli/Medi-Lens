@@ -1,39 +1,61 @@
-# Medi-Lens: Zero-Literacy Assistive Interface 👁️🔊
+Medi-Lens: Intelligent Medicine Identification & Safety Assistant 👁️🔊
+Medi-Lens is an AI-powered assistive web application designed to help elderly and visually impaired individuals identify medications and understand dosage instructions safely. By combining Optical Character Recognition (OCR) with real-time Voice Synthesis, it turns a smartphone into a "talking lens" for healthcare.
 
-**Medi-Lens** is a web-based assistive tool designed to help elderly and illiterate individuals safely identify and take their medications. It bridges the literacy-healthcare gap by turning a smartphone into an intelligent "talking lens."
+🚀 The Problem
+Many elderly individuals struggle with "Medical Illiteracy"—the inability to read or understand the tiny, complex text on medicine strips. This leads to:
 
-## 🚀 The Problem
-Many elderly individuals in rural and semi-urban areas suffer from vision impairment or functional illiteracy. They often struggle to read the tiny, complex text on medicine strips, leading to:
-- **Medical Non-Adherence:** Skipping doses due to confusion.
-- **Accidental Toxicity:** Misidentifying dosage levels.
-- **Dependency:** Relying entirely on family members for basic health tasks.
+Medication Errors: Taking the wrong pill at the wrong time.
 
-## ✨ Our Solution
-Medi-Lens shifts the burden of "understanding" from the human to the machine through:
-1. **Optical Recognition:** Using `Tesseract.js` to scan medicine names directly in the browser.
-2. **Audio Output:** Utilizing the `Web Speech API` to announce instructions in local languages.
-3. **Zero-Text UI:** A high-contrast interface using universal icons (Sun, Moon, Plate) for intuitive guidance.
+Vision Barriers: Difficulty reading fine print due to age-related impairments.
 
-## 🛠️ Tech Stack
-- **Frontend:** React.js
-- **Styling:** Standard CSS (Accessibility-First)
-- **OCR Engine:** Tesseract.js
-- **Voice Synthesis:** Web Speech API
-- **Backend/Database:** Firebase
+Language Gaps: Confusion caused by technical medical English on packaging.
 
-## 📂 Project Structure
-- `/src/components`: UI elements like Camera and Result Cards.
-- `/src/logic`: OCR processing and text filtering.
-- `/src/data`: Firebase configuration and medicine mapping.
-- `/public`: Assets and iconography.
+✨ Our Solution
+Medi-Lens simplifies the process into a 3-step interaction:
 
-## 🛠️ Installation & Setup
-1. Clone the repository:
-   `git clone https://github.com/YOUR_USERNAME/medi-lens.git`
-2. Install dependencies:
-   `npm install`
-3. Start the development server:
-   `npm start`
+Intelligent Scanning: Uses Tesseract.js to extract medicine names from live camera feeds directly in the browser.
 
----
-*Developed as a Computer Science Engineering project to promote accessible healthcare technology.*
+Multilingual Support: Provides instructions in both English and Telugu, ensuring local accessibility.
+
+Audio-First Guidance: Automatically speaks dosage instructions (e.g., "Take after food") using the Web Speech API.
+
+Visual Workflow: A high-contrast UI using universal iconography (Sun ☀️, Moon 🌙) to indicate timing without requiring high literacy.
+
+🛠️ Tech Stack
+Frontend: React.js (Hooks, Refs, Context)
+
+OCR Engine: Tesseract.js (Client-side AI)
+
+Voice Synthesis: Web Speech API (Multilingual TTS)
+
+Backend: Node.js / Express (Optional API)
+
+Database: MongoDB (with local Fail-Safe JSON for offline/demo use)
+
+Styling: CSS3 (Custom Grid & Flexbox architecture)
+
+📂 Project Structure
+/src/App.js: Main application logic, routing, and OCR integration.
+
+/src/App.css: Professional UI styling and responsive layouts.
+
+/src/data: MED_DATABASE containing medicine information and warnings.
+
+/public: Core HTML entry point and brand assets.
+
+🛠️ Installation & Setup
+Clone the repository:
+
+Bash
+git clone https://github.com/LakshmiSatyaSriSundarapalli/Medi-Lens.git
+Install dependencies:
+
+Bash
+npm install
+Start the development server:
+
+Bash
+npm start
+Note on Permissions: Ensure you grant Camera Access in your browser. For mobile testing, use an HTTPS connection to enable getUserMedia.
+
+Developed as a 2nd Year Computer Science Engineering project to bridge the gap between AI and accessible healthcare.
