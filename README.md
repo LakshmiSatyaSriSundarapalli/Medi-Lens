@@ -1,7 +1,7 @@
 # Medi-Lens: Intelligent Medicine Identification & Safety Assistant 👁️🔊
 
 <p align="center">
-  <img src="./Screenshot (388).png" width="850" alt="Medi-Lens Project Header">
+  <img src="Screenshot (388).png" width="850" alt="Medi-Lens Project Header">
   <br>
   <em>"Turning a smartphone into an intelligent talking lens for healthcare accessibility."</em>
 </p>
