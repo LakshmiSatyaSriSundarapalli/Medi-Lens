@@ -1,61 +1,49 @@
-Medi-Lens: Intelligent Medicine Identification & Safety Assistant 👁️🔊
-Medi-Lens is an AI-powered assistive web application designed to help elderly and visually impaired individuals identify medications and understand dosage instructions safely. By combining Optical Character Recognition (OCR) with real-time Voice Synthesis, it turns a smartphone into a "talking lens" for healthcare.
+# Medi-Lens: Intelligent Medicine Identification & Safety Assistant 👁️🔊
 
-🚀 The Problem
-Many elderly individuals struggle with "Medical Illiteracy"—the inability to read or understand the tiny, complex text on medicine strips. This leads to:
+<p align="center">
+  <img src="./Screenshot (388).png" width="850" alt="Medi-Lens Project Header">
+  <br>
+  <em>"Turning a smartphone into an intelligent talking lens for healthcare accessibility."</em>
+</p>
 
-Medication Errors: Taking the wrong pill at the wrong time.
+---
 
-Vision Barriers: Difficulty reading fine print due to age-related impairments.
+## 🌟 Overview
+**Medi-Lens** is an AI-powered assistive web application designed to help elderly and visually impaired individuals identify medications and understand dosage instructions safely. By combining **Optical Character Recognition (OCR)** with real-time **Voice Synthesis**, it bridges the literacy-healthcare gap for those who struggle with technical medical English or fine print.
 
-Language Gaps: Confusion caused by technical medical English on packaging.
+## 🚀 The Problem
+Many elderly individuals struggle with "Medical Illiteracy," leading to:
+* **Medication Errors:** Confusion over dosage timing and medicine names.
+* **Vision Barriers:** Difficulty reading the tiny text on medicine strips.
+* **Language Gaps:** Lack of localized instructions (e.g., Telugu) on standard packaging.
 
-✨ Our Solution
-Medi-Lens simplifies the process into a 3-step interaction:
+## ✨ Our Solution
+Medi-Lens simplifies the process into a seamless, 3-step interaction:
 
-Intelligent Scanning: Uses Tesseract.js to extract medicine names from live camera feeds directly in the browser.
+1.  **Intelligent Scanning:** Uses `Tesseract.js` to extract medicine names from live camera feeds directly in the browser (Edge AI).
+2.  **Multilingual Support:** Provides instructions in both **English and Telugu**, ensuring local accessibility.
+3.  **Audio-First Guidance:** Automatically speaks dosage instructions (e.g., "Take after food") using the **Web Speech API**.
+4.  **Visual Workflow:** A high-contrast UI using universal iconography (**Sun ☀️, Moon 🌙, Plate 🍽️**) to indicate timing without requiring high literacy.
 
-Multilingual Support: Provides instructions in both English and Telugu, ensuring local accessibility.
+---
 
-Audio-First Guidance: Automatically speaks dosage instructions (e.g., "Take after food") using the Web Speech API.
+## 🛠️ Tech Stack (MERN + AI)
+* **Frontend:** React.js (Hooks, Refs, Context API)
+* **OCR Engine:** Tesseract.js (Client-side Computer Vision)
+* **Voice Synthesis:** Web Speech API (Multilingual TTS)
+* **Backend:** Node.js & Express.js (Scalable API Routing)
+* **Database:** MongoDB (with a local JSON Fail-Safe for offline/demo use)
+* **Styling:** CSS3 (Accessibility-focused Custom Grid & Flexbox architecture)
 
-Visual Workflow: A high-contrast UI using universal iconography (Sun ☀️, Moon 🌙) to indicate timing without requiring high literacy.
+---
 
-🛠️ Tech Stack
-Frontend: React.js (Hooks, Refs, Context)
+## 📂 Project Structure
+- **/src/App.js:** Main application logic, state management, and OCR integration.
+- **/src/App.css:** Professional UI styling and responsive mobile-first layouts.
+- **/src/data:** `MED_DATABASE` containing medicine information and localized warnings.
+- **/public:** Core HTML entry point, brand assets, and high-contrast icons.
 
-OCR Engine: Tesseract.js (Client-side AI)
-
-Voice Synthesis: Web Speech API (Multilingual TTS)
-
-Backend: Node.js / Express (Optional API)
-
-Database: MongoDB (with local Fail-Safe JSON for offline/demo use)
-
-Styling: CSS3 (Custom Grid & Flexbox architecture)
-
-📂 Project Structure
-/src/App.js: Main application logic, routing, and OCR integration.
-
-/src/App.css: Professional UI styling and responsive layouts.
-
-/src/data: MED_DATABASE containing medicine information and warnings.
-
-/public: Core HTML entry point and brand assets.
-
-🛠️ Installation & Setup
-Clone the repository:
-
-Bash
-git clone https://github.com/LakshmiSatyaSriSundarapalli/Medi-Lens.git
-Install dependencies:
-
-Bash
-npm install
-Start the development server:
-
-Bash
-npm start
-Note on Permissions: Ensure you grant Camera Access in your browser. For mobile testing, use an HTTPS connection to enable getUserMedia.
-
-Developed as a 2nd Year Computer Science Engineering project to bridge the gap between AI and accessible healthcare.
+## ⚙️ Installation & Setup
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/LakshmiSatyaSriSundarapalli/Medi-Lens.git](https://github.com/LakshmiSatyaSriSundarapalli/Medi-Lens.git)
